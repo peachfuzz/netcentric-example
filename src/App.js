@@ -22,6 +22,18 @@ class App extends React.Component {
           </tr>
           <Friends friends={this.state.friends} />
         </table>
+        <small>
+          <code>
+            Learn more about react{" "}
+            <a
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>
+          </code>
+        </small>
       </div>
     );
   }
