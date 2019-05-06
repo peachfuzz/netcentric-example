@@ -8,7 +8,7 @@
   pointer-events: none;
 }
 
-.App-header {
+#root {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -21,6 +21,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.table {
+  color: white;
 }
 
 @keyframes App-logo-spin {
