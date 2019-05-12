@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+
+// getting other components
 import FriendsTable from "./Components/Friends/FriendsTable";
 
 class App extends React.Component {
@@ -7,7 +9,7 @@ class App extends React.Component {
         return (
             <div className="container justify-content-center text-center">
                 <h1>An Example in React</h1>
-                {/* created the top of the head */}
+                {/* Initial calling of another component */}
                 <FriendsTable />
                 <small>
                     <code>

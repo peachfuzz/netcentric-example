@@ -1,8 +1,9 @@
 import React from "react";
-// var friends = require("./friends.json");
 
 class Friends extends React.Component {
     render() {
+        // map is basically "for item in items" map the items in the bracket
+        // props cannot be changed
         return this.props.friends.map((friend, index) => {
             return (
                 <tr key={index}>

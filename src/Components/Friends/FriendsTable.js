@@ -1,9 +1,12 @@
 import React from "react";
+
+// getting other component
 import Friends from "./Friends";
 
 class FriendsTable extends React.Component {
     constructor() {
         super();
+        // state can be changed
         this.state = {
             friends: require("./friends.json").friends // getting the friends from the json in a relative path
         };
@@ -12,7 +15,6 @@ class FriendsTable extends React.Component {
     render() {
         return (
             <table className="table table-bordered table-hover">
-                {/* created the top of the head */}
                 <thead>
                     <tr>
                         <th scope="col">First Name</th>
@@ -21,6 +23,7 @@ class FriendsTable extends React.Component {
                     </tr>
                 </thead>
                 <tbody>
+                    {/* calling another component */}
                     <Friends friends={this.state.friends} />
                 </tbody>
             </table>
